@@ -41,6 +41,9 @@
 }
 
 /* home slider responsive design   */
+.home-slider-wrapper{
+    background-image: url("../../images/slider-bg-image-420x240.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+}
 .slider-content h1{
     font-size:var(--fs-32);
     line-height:2rem;
@@ -61,6 +64,9 @@
 
 
 /* event section responsive design */
+.calender-colls-wrapper{
+    min-height:489px;
+}
 .events-section{
     padding-top:3rem;
     padding-bottom:3rem;
@@ -181,9 +187,15 @@
         width: 3.75rem;
         height: 3.75rem;
     }
+    .calender-colls-wrapper{
+        min-height:527px;
+    }
 }
 
 @media (min-width: 576px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg-iamge-576x412.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
     .calendar-days div {
         width: 4rem;
         height: 4rem;
@@ -192,9 +204,15 @@
         width: 30.375rem;
         font-size: var(--fs-24);
     }
+    .calender-colls-wrapper{
+        min-height:551px;
+    }
 }
 
 @media (min-width: 768px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg-image-768x412.jpg"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
     .slider-content h1{
         font-size:var(--fs-40);
         line-height:2.9rem;
@@ -265,7 +283,9 @@
     .book-review p {
         line-height: 1.8rem;
     }
-
+    .calender-colls-wrapper{
+        min-height:719px;
+    }
     .footer-content {
         display: flex;
         flex-direction:row;
@@ -275,6 +295,9 @@
 }
 
 @media (min-width: 992px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg-image-992x652.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
     .header-logo{
         padding-right: 2.5rem;
     }
@@ -311,6 +334,9 @@
 
 
 /*event section responsive design  */
+.calender-colls-wrapper{
+    min-height:991px;
+}
 .calendar-days div {
     width: 7.75rem;
     height: 7.75rem;
@@ -368,6 +394,9 @@
 }
 
 @media (min-width: 1080px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg-image-1080x652.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
 .header-section.sticky .header-icons-section{
     display:none;
     transition:var(--transition);
@@ -412,6 +441,9 @@
 }
 /* event section responsive design  */
 
+.calender-colls-wrapper{
+    min-height:1071px;
+}
 .calender-colls-wrapper{
     padding-top:5rem;
     padding-bottom:5rem;
@@ -463,6 +495,9 @@
 }
 
 @media (min-width: 1200px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg-iamge-1200x652.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
     .header-logo{
         padding-right: 2.5rem;
     }
@@ -484,6 +519,9 @@
     }
 
     /* event section responsive design   */
+    .calender-colls-wrapper{
+        min-height:783px;
+    }
     .calendar-days div {
         width: 4.75rem;
         height: 4.75rem;
@@ -545,9 +583,10 @@
 
 }
 
-
-
 @media (min-width: 1440px) {
+    .home-slider-wrapper{
+        background-image: url("../../images/slider-bg.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    }
     .calender-colls-wrapper{
         padding-right:5rem;
     }

@@ -408,7 +408,6 @@ body {
 /* home slider section desing  */
 
 .home-slider-wrapper{
-  background-image: url("../../images/slider-bg.webp"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
