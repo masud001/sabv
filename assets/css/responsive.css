@@ -19,10 +19,10 @@
 .header-menu-links{
     padding-left:1rem;
 }
-.menu-items-section ul li a{
+.menu-items-section nav a{
     font-size:var(--fs-16);
 }
-.menu-items-section ul{
+.menu-items-section nav{
     gap:24px;
 }
 .menu-link-section ul li{
@@ -473,11 +473,11 @@
     .header-menu-links{
         padding-left:1.875rem;
     }
-    .menu-items-section ul li a{
+    .menu-items-section nav a{
         font-size:var(--fs-16);
     }
-    .menu-items-section ul{
-        gap:24px;
+    .menu-items-section nav{
+        gap:1.5rem;
     }
     .menu-link-section ul li{
         padding:1.625rem 1.875rem;
