@@ -49,28 +49,14 @@
   --transition: all 0.3s ease-in-out;
 }
 
-.dark {
-  --bg-body: var(--dark-body);
-  --bg-main: var(--dark-main);
-  --bg-second: var(--dark-second);
-  --color-hover: var(--dark-hover);
-  --color-txt: var(--dark-text);
-}
 
-.light {
-  --bg-body: var(--light-body);
-  --bg-main: var(--light-main);
-  --bg-second: var(--light-second);
-  --color-hover: var(--light-hover);
-  --color-txt: var(--light-text);
-}
+
+
 
 .calendar {
   height: max-content;
   width: max-content;
-  background-color: var(--bg-main);
-  border-radius: 30px;
-  padding: 20px;
+  background-color: var(--savb-very-light-gray);
   position: relative;
   overflow: hidden;
 }
@@ -81,7 +67,7 @@
   align-items: center;
   font-size: 25px;
   font-weight: 600;
-  color: var(--color-txt);
+  color: var(--savb-black);
   padding: 10px;
 }
 
@@ -115,8 +101,6 @@
 }
 
 .calendar-days div {
-  width: 76px;
-  height: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,8 +110,6 @@
   animation: to-top 1s forwards;
   border-right: 1px solid var(--savb-stroke);
   border-bottom: 1px solid var(--savb-stroke);
-
-  font-size: var(--fs-14);
   font-weight: var(--fw-regular);
   color: var(--savb-black);
 }
@@ -136,6 +118,9 @@
   background-color: var(--savb-theme-color);
   transition: var(--transition);
   color: var(--savb-white);
+}
+.calendar-day:not(.calendar-day-other-month) {
+  background-color:var(--savb-white);
 }
 .calendar-days .calendar-day-other-month {
   color: var(--savb-light-gray);
@@ -174,10 +159,13 @@
 }
 
 .month-picker {
+  font-size:var(--fs-30);
+  font-weight:var(--fw-semi-bold);
+  line-height:1.75rem;
   padding: 5px 10px;
   border-radius: 10px;
   cursor: pointer;
-  color: #ff4b4b;
+  color: var(--savb-black);
 }
 
 .month-picker:hover {
@@ -245,6 +233,35 @@
 .month-list > div > div:hover {
   background-color: var(--color-hover);
 }
+
+.calendar-day-hover.asign-date{
+  position:relative;
+  color:var(--savb-theme-color) !important;
+  font-weight:var(--fw-bold) !important;
+}
+.calendar-day-hover.asign-date::after{
+  content:"";
+  position:absolute;
+  top:67%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:0.375rem;
+  height:0.375rem;
+  background-color:var(--savb-theme-color);
+  border-radius:50%;
+}
+
+.calendar-day-hover.asign-date:hover{
+    color: var(--savb-white) !important;
+}
+.calendar-day-hover.asign-date:hover::after{
+  background-color: var(--savb-white) !important;
+}
+
+
+
+
+
 
 @keyframes to-top {
   0% {

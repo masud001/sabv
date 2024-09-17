@@ -181,10 +181,52 @@ document.querySelector("#next-month").onclick = () => {
   generateCalendar(curr_month.value, curr_year.value);
 };
 
-// Dark mode toggle functionality
-let dark_mode_toggle = document.querySelector(".dark-mode-switch");
 
-dark_mode_toggle.onclick = () => {
-  document.querySelector("body").classList.toggle("light");
-  document.querySelector("body").classList.toggle("dark");
+// pic some randome date
+
+const addRandomAsignDateClass = () => {
+  // Select all elements with the class 'calendar-day-hover'
+  let hoverDays = document.querySelectorAll(".calendar-day-hover");
+  console.log("hoverDays",hoverDays)
+
+  // Create a random subset of 4 to 5 indices from the hoverDays NodeList
+  let randomCount = Math.floor(Math.random() * 2) + 4; // Randomly choose between 4 and 5
+  let selectedIndices = new Set();
+
+  while (selectedIndices.size < randomCount) {
+    let randomIndex = Math.floor(Math.random() * hoverDays.length);
+    selectedIndices.add(randomIndex);
+  }
+
+  // Add 'asign-date' class to the randomly selected days
+  selectedIndices.forEach(index => {
+    hoverDays[index].classList.add("asign-date");
+  });
 };
+
+addRandomAsignDateClass();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
