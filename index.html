@@ -1,964 +1,933 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="El. parduotuvės, individualios svetainės, UI/UX, online sistemos, web sujungimai - tai darome kasdien. "
-    />
-
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-
-    <link rel="stylesheet" href="./assets/css/calender.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-
-
-
-    <title>Document</title>
-  </head>
-  <body class="savb">
-
-<!--   mobile menu  -->
-
-  <div class="mobile-menu" id="mobile-menu" role="mobile menu"  aria-labelledby="responsive-mobile-menu">
-    <div class="mobile-menu-wrapper">
-      <ul>
-        <li> <a href="/#">Užsakyk</a> </li>
-        <li> <a href="/#">Apie mus</a> </li>
-        <li> <a href="/#">Paslaugos</a> </li>
-        <li> <a href="/#">Veikla</a> </li>
-        <li> <a href="/#">D.U.K.</a> </li>
-        <li> <a href="/#">Apsilankyk</a> </li>
-        <li> <a href="/#">Regiono bibliotekoms</a> </li>
-      <ul>
-    </div>
-  </div>
-
-  <section class="home-page" id="home-page">
-    <header class="header-section" id="myHeader" aria-labelledby="header menu">
-      <div class="container">
-        <div class="header-content" >
-            <div class="header-logo">
-              <a href="/#" ><img src="./images/logo/logo.svg" alt="logo" /></a>
-            </div>
-            <div class="header-menus-section">
-              <div class="header-icons-section">
-                <div class="header-times">
-                  <span> <img src="./images/icons/Clock.svg" alt="logo" /> </span>
-                  <span>Darbo laikas:</span>
-                  <span class="date">I-V   10:00-19:00</span>
-                </div>
-                <div class="header-icons">
-                  <span> <img src="./images/icons/Clock.svg" alt="Clock icon" width="22" height="22" /> </span>
-                  <span> <img src="./images/icons/tree-structure.svg" alt="tree-structure icon" width="22" height="22" /> </span>
-                  <span> <img src="./images/icons/globe.svg" alt="globe icon" width="22" height="22" /> </span>
-                  <span> <img src="./images/icons/hand.svg" alt="hand icon" width="22" height="22" /> </span>
-                  <span> <img src="./images/icons/download.svg" alt="download icon" width="22" height="22" /> </span>
-
-                  <button class="language-btn" aria-label="language translation button">
-                    <span>LT</span>
-                          /
-                    <span>EN</span>
-                  </button>
-
-                  <button class="hamburger-box" id="mobile-menu-btn" aria-label="mobile-menu button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-
-
-                </div>
-              </div>
-              <div class="header-menu-links">
-
-                <div class="menu-items-section">
-                  <nav>
-                     <a href="/#">Užsakyk</a>
-                     <a href="/#">Apie mus</a>
-                     <a href="/#">Paslaugos</a>
-                     <a href="/#">Veikla</a>
-                     <a href="/#">D.U.K.</a>
-                  </nav>
-                </div>
-                <div class="menu-link-section">
-
-                  <ul>
-                    <li> <a href="" ><span> <img src="./images/icons/header-arrow-icon.svg" alt="header-arrow-icon" width="22" height="22" /> </span>  <span>Apsilankyk</span> </a></li>
-                    <li> <a href="" ><span> <img src="./images/icons/book-open-icon.svg" alt="book-open-icon" width="22" height="22" /> </span> <span>Regiono bibliotekoms </span> </a></li>
-                  </ul>
-
-                </div>
-
-
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="El. parduotuvės, individualios svetainės, UI/UX, online sistemos, web sujungimai - tai darome kasdien. "
+            />
+        <!-- swiper css -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            />
+        <link rel="stylesheet" href="./assets/css/calender.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.min.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.min.css" />
+        <title>Savb || Frontend</title>
+    </head>
+    <body class="savb">
+        <!--   mobile menu  -->
+        <div class="mobile-menu" id="mobile-menu" role="mobile menu"  aria-labelledby="responsive-mobile-menu">
+            <div class="mobile-menu-wrapper">
+                <ul>
+                <li> <a href="/#">Užsakyk</a> </li>
+                <li> <a href="/#">Apie mus</a> </li>
+                <li> <a href="/#">Paslaugos</a> </li>
+                <li> <a href="/#">Veikla</a> </li>
+                <li> <a href="/#">D.U.K.</a> </li>
+                <li> <a href="/#">Apsilankyk</a> </li>
+                <li> <a href="/#">Regiono bibliotekoms</a> </li>
+                <ul>
             </div>
         </div>
-      </div>
-    </header>
-
-    <section class="home-slider-section" aria-labelledby="hero slider">
-      <div class="home-slider-wrapper">
-        <div class="container">
-          <div class="swiper home-carousel">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+        <section class="home-page" id="home-page">
+            <!--  header section  -->
+            <header class="header-section" id="myHeader" aria-labelledby="header menu">
+                <div class="container">
+                    <div class="header-content" >
+                        <div class="header-logo">
+                            <a href="/#" ><img src="./images/logo/logo.svg" alt="logo" /></a>
+                        </div>
+                        <div class="header-menus-section">
+                            <div class="header-icons-section">
+                                <div class="header-times">
+                                    <span> <img src="./images/icons/Clock.svg" alt="logo" /> </span>
+                                    <span>Darbo laikas:</span>
+                                    <span class="date">I-V   10:00-19:00</span>
+                                </div>
+                                <div class="header-icons">
+                                    <span> <img src="./images/icons/Clock.svg" alt="Clock icon" width="22" height="22" /> </span>
+                                    <span> <img src="./images/icons/tree-structure.svg" alt="tree-structure icon" width="22" height="22" /> </span>
+                                    <span> <img src="./images/icons/globe.svg" alt="globe icon" width="22" height="22" /> </span>
+                                    <span> <img src="./images/icons/hand.svg" alt="hand icon" width="22" height="22" /> </span>
+                                    <span> <img src="./images/icons/download.svg" alt="download icon" width="22" height="22" /> </span>
+                                    <button class="language-btn" aria-label="language translation button">
+                                    <span>LT</span>
+                                    /
+                                    <span>EN</span>
+                                    </button>
+                                    <button class="hamburger-box" id="mobile-menu-btn" aria-label="mobile-menu button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="header-menu-links">
+                                <div class="menu-items-section">
+                                    <nav>
+                                        <a href="/#">Užsakyk</a>
+                                        <a href="/#">Apie mus</a>
+                                        <a href="/#">Paslaugos</a>
+                                        <a href="/#">Veikla</a>
+                                        <a href="/#">D.U.K.</a>
+                                    </nav>
+                                </div>
+                                <div class="menu-link-section">
+                                    <ul>
+                                        <li> <a href="" ><span> <img src="./images/icons/header-arrow-icon.svg" alt="header-arrow-icon" width="22" height="22" /> </span>  <span>Apsilankyk</span> </a></li>
+                                        <li> <a href="" ><span> <img src="./images/icons/book-open-icon.svg" alt="book-open-icon" width="22" height="22" /> </span> <span>Regiono bibliotekoms </span> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+            </header>
+            <!--  home slider  -->
+            <section class="home-slider-section" aria-labelledby="hero slider">
+                <div class="home-slider-wrapper">
+                    <div class="container">
+                        <div class="swiper home-carousel">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-content">
+                                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
+                                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+                                        <div aria-labelledby="home slider button" >
+                                            <a href="" class="btn-primary">Plačiau</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="savb-swiper-button-prev">
+                            <img src="./images/ArrowRight-white.svg" alt=" prev-arrow icon" />
+                        </div>
+                        <div class="savb-swiper-button-next">
+                            <img src="./images/ArrowLeft-white.svg" alt="next-arrow icon" />
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+            </section>
+            <!--  event calender section  -->
+            <section class="events-section"  aria-labelledby="events-items">
+                <div class="container">
+                    <div class="calender-colls-wrapper">
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <div>
+                                    <span class="month-picker" id="month-picker"> February</span>
+                                    <span id="year">2021</span>
+                                </div>
+                                <div class="month-year-change-navigation">
+                                    <span class="month-change" id="prev-month">
+                                    <img
+                                        src="./images/icons/prev-arrow.svg"
+                                        alt=" prev year arrow icon"
+                                        />
+                                    </span>
+                                    <span class="month-change" id="next-month">
+                                    <img
+                                        src="./images/icons/prev-arrow.svg"
+                                        alt=" prev year arrow icon"
+                                        />
+                                    </span>
+                                </div>
+                                <div class="year-picker sr-only">
+                                    <span class="year-change" id="prev-year">
+                                        <pre> <img src="./images/icons/prev-arrow.svg" alt=" prev year arrow icon"> </pre>
+                                    </span>
+                                    <span id="year">2021</span>
+                                    <span class="year-change" id="next-year">
+                                        <pre><img src="./images/icons/prev-arrow.svg" alt=" prev year arrow icon"> </pre>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-week-day">
+                                    <div>Pr</div>
+                                    <div>An</div>
+                                    <div>Tr</div>
+                                    <div>Ke</div>
+                                    <div>Pn</div>
+                                    <div>Še</div>
+                                    <div>Sk</div>
+                                </div>
+                                <div class="calendar-days">1</div>
+                            </div>
+                            <div class="month-list sr-only"></div>
+                        </div>
+                    </div>
+                    <div class="tab-content-colls-wrapper">
+                        <div class="section-title">
+                            <h2>Aktualu</h2>
+                        </div>
+                        <div class="tab-container">
+                            <div class="tab-buttons">
+                                <button class="tab-button active" data-tab="tab1">Visi įrašai</button>
+                                <button class="tab-button" data-tab="tab2">Renginiai</button>
+                                <button class="tab-button" data-tab="tab3">Parodos</button>
+                                <button class="tab-button" data-tab="tab4">Naujienos</button>
+                                <button class="tab-button" data-tab="tab5">Informacija</button>
+                            </div>
+                            <div class="tab-contents">
+                                <div id="tab1" class="tab-content active">
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image.webp" alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab-content">
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-3.webp"  alt="event items thumb" />
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab-content">
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-2.webp" alt="event items thumb" />
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab-content">
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-3.webp" />
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="tab-content">
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
+                                        <div>
+                                            <p>2024-02-16</p>
+                                            <h2>Padovanok bibliotekai reikalingą knygą</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+            </section>
+            <!--  latest books carousel  -->
+            <section class="latest-books-section" aria-labelledby="latest-books">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="latest-books">Naujausios knygos</h2>
+                        <a href="/#" target="_blank" rel="noopener noreferrer">
+                        <span>Peržiūrėti visas knygas</span>
+                        <span
+                            ><img
+                            src="./images/link-arrow.svg"
+                            width="12"
+                            height="12"
+                            alt="Peržiūrėti visas knygas arrow icon"
+                            /></span>
+                        </a>
+                    </div>
+                    <div class="swiper latest-books-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Dantistas.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Tim Sullivan</h2>
+                                    <h3 class="book-name">Dantistas</h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Bridžertonai.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Julia Quinn</h2>
+                                    <h3 class="book-name">
+                                        Bridžertonai. Jo bučinys. Hiacintos istorija
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Villos-dukterys.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Anne Jacobs</h2>
+                                    <h3 class="book-name">Villos dukterys</h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Tobula-tyla.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Helen Fields</h2>
+                                    <h3 class="book-name">Tobula tyla</h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Dantistas.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Tim Sullivan</h2>
+                                    <h3 class="book-name">Dantistas</h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Bridžertonai.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Julia Quinn</h2>
+                                    <h3 class="book-name">
+                                        Bridžertonai. Jo bučinys. Hiacintos istorija
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Villos-dukterys.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Anne Jacobs</h2>
+                                    <h3 class="book-name">Villos dukterys</h3>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src="./images/books/Tobula-tyla.webp"
+                                        alt="Dantistas book-cover"
+                                        />
+                                    <h2 class="writer-name">Helen Fields</h2>
+                                    <h3 class="book-name">Tobula tyla</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  navigation buttons -->
+                    <div class="savb-swiper-button-prev">
+                        <img src="./images/arrow-left.svg" alt=" prev-arrow icon" />
+                    </div>
+                    <div class="savb-swiper-button-next">
+                        <img src="./images/arrow-right.svg" alt="next-arrow icon" />
+                    </div>
+                </div>
+            </section>
+            <!--  books links section  -->
+            <section
+                class="book-link-section"
+                aria-labelledby="book-link-For-children-and-teenagers"
+                >
+                <div class="book-link-section-image"></div>
+                <div class="container">
+                    <div class="link-section-title">
+                        <h2 class="section-title" id="book-link-For-children-and-teenagers">
+                            Vaikams ir <br />
+                            paaugliams
+                        </h2>
+                    </div>
+                    <div class="links-wrapper">
+                        <div class="single-link">
+                            <a
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Renginiai - Event Link"
+                                >
+                                <div class="link-icon">
+                                    <img
+                                        src="./images/icons/CalendarBlank.svg"
+                                        alt="Calendar icon representing events"
+                                        />
+                                </div>
+                                <span>Renginiai</span>
+                            </a>
+                        </div>
+                        <div class="single-link">
+                            <a
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Edukacijos - Event Link"
+                                >
+                                <div class="link-icon">
+                                    <img
+                                        src="./images/icons/ChalkboardTeacher.svg"
+                                        alt="Chalkboard Teacher icon representing events"
+                                        />
+                                </div>
+                                <span>Edukacijos</span>
+                            </a>
+                        </div>
+                        <div class="single-link">
+                            <a
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Žaidimai ir kitos veiklos - Event Link"
+                                >
+                                <div class="link-icon">
+                                    <img
+                                        src="./images/icons/PuzzlePiece.svg"
+                                        alt="Puzzle Piece icon representing events"
+                                        />
+                                </div>
+                                <span
+                                    >Žaidimai ir kitos <br />
+                                veiklos</span
+                                    >
+                            </a>
+                        </div>
+                        <div class="single-link">
+                            <a
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Naujausios knygos - Event Link"
+                                >
+                                <div class="link-icon">
+                                    <img
+                                        src="./images/icons/Books.svg"
+                                        alt="Puzzle Piece icon representing events"
+                                        />
+                                </div>
+                                <span>Naujausios knygos </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+            </section>
+            <!--  pertners logo sections  -->
+            <section class="partners-section" aria-labelledby="partners logos">
+                <!-- Slider main container -->
+                <div class="container">
+                    <div class="swiper partners-carousel">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/vaga.svg"
+                                    alt="vaga partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/historypin.svg"
+                                    alt="historypin partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/we--lithaanis.svg"
+                                    alt="we--lithaanis partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/Valdzios-vartai.svg"
+                                    alt="Valdzios-vartai partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/ibiblioteka.svg"
+                                    alt="ibiblioteka partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/vaga.svg"
+                                    alt="vaga partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/historypin.svg"
+                                    alt="historypin partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/we--lithaanis.svg"
+                                    alt="we--lithaanis partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/Valdzios-vartai.svg"
+                                    alt="Valdzios-vartai partners-logo"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="./images/partners-logo/ibiblioteka.svg"
+                                    alt="ibiblioteka partners-logo"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  navigation buttons -->
+                    <div class="savb-swiper-button-prev">
+                        <img src="./images/arrow-left.svg" alt=" prev-arrow icon" />
+                    </div>
+                    <div class="savb-swiper-button-next">
+                        <img src="./images/arrow-right.svg" alt="next-arrow icon" />
+                    </div>
+                </div>
+            </section>
+            <!--  books promo review section  -->
+            <section class="book-review-section-wrapper" aria-labelledby="book-review">
+                <div class="container">
+                    <div class="book-cover">
+                        <img src="./images/book-cover-image.webp" alt="" />
+                    </div>
+                </div>
+                <div class="book-review-section">
+                    <div class="container">
+                        <div class="book-review">
+                            <span class="quote-icon"
+                                ><img src="./images/icons/quote-icon.svg" alt="review icon"
+                                /></span>
+                            <h2>„Aušros alėja“</h2>
+                            <p>
+                                The most advanced revenue than this. I like Level more and more
+                                each da easier. It really saves me time and ef business has been
+                                lacking lorem ipsum.
+                            </p>
+                            <div class="">
+                                <a href="/#" class="btn-primary white-bg">Skaityti</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
+            </section>
+            <!--  footer top column section  -->
+            <section class="footer-coll-section" aria-labelledby="footer-column">
+                <div class="container">
+                    <div class="footer-coll">
+                        <div class="footer-coll-logo">
+                            <div class="footer-logo">
+                                <a href="" aria-label="Homepage" title="logo">
+                                <img src="./images/logo/logo.svg" alt="texus it Logo" />
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Biudžetinė įstaiga, kodas 190757940 <br />
+                                    Duomenys kaupiami ir saugomi <br />
+                                    Juridinių asmenų registre
+                                </p>
+                            </div>
+                            <div class="footer-social-links">
+                                <a
+                                    href="/#"
+                                    aria-label="Visit our Facebook page"
+                                    title="Follow us on Facebook"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                <img src="./images/icons/facebook.svg" alt="facebook logo" />
+                                <span class="sr-only">facebook</span>
+                                </a>
+                                <a
+                                    href="/#"
+                                    aria-label="Visit our Instagram profile"
+                                    title="Follow us on Instagram"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                    src="./images/icons/instagram.svg"
+                                    alt="instagram logo"
+                                    /><span class="sr-only">instagram</span></a
+                                    >
+                                <a
+                                    href="/#"
+                                    aria-label="Visit our Youtube channel"
+                                    title="Subscribe to our Youtube Channel"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                <img src="./images/icons/youtube.svg" alt="youtube logo" />
+                                <span class="sr-only">Youtube</span></a
+                                    >
+                            </div>
+                        </div>
+                        <div class="footer-coll-item">
+                            <h2>Kontaktai</h2>
+                            <address>
+                                <div aria-label="address">
+                                    <span
+                                        ><img
+                                        src="./images/icons/locations.svg"
+                                        alt=" address location icons"
+                                        /></span>
+                                    Aušros alėja 62, LT-76235,  Šiauliai
+                                </div>
+                                <div aria-label="email">
+                                    <span
+                                        ><img src="./images/icons/envelope.svg" alt="mail icon"
+                                        /></span>
+                                    bibl@savb.lt
+                                </div>
+                                <div aria-label="phone">
+                                    <span
+                                        ><img src="./images/icons/phone.svg" alt="phone icons"
+                                        /></span>
+                                    (8 41) 52 37 5057840
+                                </div>
+                                <div aria-label="address number">Įm. kodas: 190757840</div>
+                            </address>
+                        </div>
+                        <div class="footer-coll-item">
+                            <h2>Kontaktai</h2>
+                            <ul aria-label="footer links">
+                                <li><a href="/#">Struktūra ir kontaktinė informacija</a></li>
+                                <li><a href="/#">Administracinė informacija</a></li>
+                                <li><a href="/#">Logotipas</a></li>
+                                <li><a href="/#">Teisės aktai</a></li>
+                                <li><a href="/#">Asmens duomenų apsauga</a></li>
+                                <li><a href="/#">Korupcijos prevencija</a></li>
+                                <li><a href="/#">Pranešėjų apsauga</a></li>
+                                <li><a href="/#">Nuorodos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-coll-item">
+                            <h2>
+                                Prenumeruokite naujienlaiškį
+                                <br />
+                                ir sužinokite naujienas pirmieji!
+                            </h2>
+                            <form action="#" method="POST" aria-label="Newsletter Subscription">
+                                <div class="footer-input">
+                                    <label for="email" class="sr-only">Jūsų el. paštas</label>
+                                    <div class="footer-input-icon">
+                                        <img src="./images/icons/email.svg" alt="email icon" />
+                                    </div>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Jūsų el. paštas"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="emailHelp"
+                                        />
+                                </div>
+                                <button
+                                    class="btn-primary"
+                                    type="submit"
+                                    aria-label="Submit Newsletter Subscription"
+                                    >
+                                Prenumeruoti
+                                </button>
+                                <p id="emailHelp">
+                                    *Prenumeruodami naujienlaiškį sutinkate su <br />
+                                    <a href="/privatumo-politika" aria-label="Read Privacy Policy">
+                                    privatumo politika
+                                    </a>
+                                </p>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-content">
-                        <h1>Didžiausia viešoji biblioteka </br> šiaurės Lietuvoje</h1>
-                        <p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
-                        <div aria-labelledby="home slider button" >
-                          <a href="" class="btn-primary">Plačiau</a>
-                        </div>
+            </section>
+            <!--  footer section  -->
+            <footer class="footer" role="contentinfo"  aria-labelledby="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <p>
+                            &copy; 2023 Šiaulių apskrities Povilo Višinskio viešoji biblioteka
+                        </p>
+                        <p>
+                            Sukurta :
+                            <a
+                                href="https://texus.lt"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Texus"
+                                >Texus</a
+                                >
+                        </p>
                     </div>
                 </div>
-              </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="savb-swiper-button-prev">
-              <img src="./images/ArrowRight-white.svg" alt=" prev-arrow icon" />
-          </div>
-          <div class="savb-swiper-button-next">
-              <img src="./images/ArrowLeft-white.svg" alt="next-arrow icon" />
-          </div>
-        </div>
-      </div>
-    </section>
+            </footer>
+        </section>
+        <!-- swiper js  -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/calender.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper1 = new Swiper(".partners-carousel", {
 
-    <section class="events-section"  aria-labelledby="events-items">
-      <div class="container">
-        <div class="calender-colls-wrapper">
-          <div class="calendar">
-            <div class="calendar-header">
-              <div>
-                <span class="month-picker" id="month-picker"> February</span>
-                <span id="year">2021</span>
-              </div>
-              <div class="month-year-change-navigation">
-                <span class="month-change" id="prev-month">
-                  <img
-                    src="./images/icons/prev-arrow.svg"
-                    alt=" prev year arrow icon"
-                  />
-                </span>
-                <span class="month-change" id="next-month">
-                  <img
-                    src="./images/icons/prev-arrow.svg"
-                    alt=" prev year arrow icon"
-                  />
-                </span>
-              </div>
+              spaceBetween: 0,
+              loop: false,
+              freeMode: false,
+              navigation: {
+                nextEl: ".savb-swiper-button-next",
+                prevEl: ".savb-swiper-button-prev",
+              },
+               breakpoints: {
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                992: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                 1080: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1440: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              },
+            });
+            var swiper2 = new Swiper(".latest-books-carousel", {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              loop: false,
+              freeMode: false,
+              navigation: {
+                nextEl: ".savb-swiper-button-next",
+                prevEl: ".savb-swiper-button-prev",
+              },
+              breakpoints: {
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                1080: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                 1440: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              },
+            });
+            var swiper3 = new Swiper(".home-carousel", {
+              slidesPerView: 1,
+              spaceBetween: 0,
+              loop: true,
+              freeMode: true,
+              autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+              },
+              navigation: {
+                nextEl: ".savb-swiper-button-next",
+                prevEl: ".savb-swiper-button-prev",
+              },
+            });
+        </script>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
 
-              <div class="year-picker sr-only">
-                <span class="year-change" id="prev-year">
-                  <pre> <img src="./images/icons/prev-arrow.svg" alt=" prev year arrow icon"> </pre>
-                </span>
-                <span id="year">2021</span>
-                <span class="year-change" id="next-year">
-                  <pre><img src="./images/icons/prev-arrow.svg" alt=" prev year arrow icon"> </pre>
-                </span>
-              </div>
-            </div>
-            <div class="calendar-body">
-              <div class="calendar-week-day">
-                <div>Pr</div>
-                <div>An</div>
-                <div>Tr</div>
-                <div>Ke</div>
-                <div>Pn</div>
-                <div>Še</div>
-                <div>Sk</div>
-              </div>
-              <div class="calendar-days">1</div>
-            </div>
-
-            <div class="month-list sr-only"></div>
-          </div>
-        </div>
-        <div class="tab-content-colls-wrapper">
-          <div class="section-title">
-            <h2>Aktualu</h2>
-          </div>
-
-
-          <div class="tab-container">
-            <div class="tab-buttons">
-              <button class="tab-button active" data-tab="tab1">Visi įrašai</button>
-              <button class="tab-button" data-tab="tab2">Renginiai</button>
-              <button class="tab-button" data-tab="tab3">Parodos</button>
-              <button class="tab-button" data-tab="tab4">Naujienos</button>
-              <button class="tab-button" data-tab="tab5">Informacija</button>
-            </div>
-            <div class="tab-contents">
-              <div id="tab1" class="tab-content active">
-                <div class="content-item">
-                  <img src="./images/event-items-image.webp" alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-              </div>
-              <div id="tab2" class="tab-content">
-                <div class="content-item">
-                    <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
-                    <div>
-                      <p>2024-02-16</p>
-                      <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                    </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-3.webp"  alt="event items thumb" />
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-              </div>
-              <div id="tab3" class="tab-content">
-                <div class="content-item">
-                  <img src="./images/event-items-image-2.webp" alt="event items thumb" />
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-              </div>
-              <div id="tab4" class="tab-content">
-                <div class="content-item">
-                  <img src="./images/event-items-image.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-3.webp" />
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-              </div>
-              <div id="tab5" class="tab-content">
-                <div class="content-item">
-                  <img src="./images/event-items-image-3.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <img src="./images/event-items-image-2.webp"  alt="event items thumb"/>
-                  <div>
-                    <p>2024-02-16</p>
-                    <h2>Padovanok bibliotekai reikalingą knygą</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="latest-books-section" aria-labelledby="latest-books">
-      <div class="container">
-        <div class="section-title">
-          <h2 id="latest-books">Naujausios knygos</h2>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
-            <span>Peržiūrėti visas knygas</span>
-            <span
-              ><img
-                src="./images/link-arrow.svg"
-                width="12"
-                height="12"
-                alt="Peržiūrėti visas knygas arrow icon"
-            /></span>
-          </a>
-        </div>
-        <div class="swiper latest-books-carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Dantistas.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Tim Sullivan</h2>
-                <h3 class="book-name">Dantistas</h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Bridžertonai.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Julia Quinn</h2>
-                <h3 class="book-name">
-                  Bridžertonai. Jo bučinys. Hiacintos istorija
-                </h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Villos-dukterys.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Anne Jacobs</h2>
-                <h3 class="book-name">Villos dukterys</h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Tobula-tyla.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Helen Fields</h2>
-                <h3 class="book-name">Tobula tyla</h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Dantistas.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Tim Sullivan</h2>
-                <h3 class="book-name">Dantistas</h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Bridžertonai.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Julia Quinn</h2>
-                <h3 class="book-name">
-                  Bridžertonai. Jo bučinys. Hiacintos istorija
-                </h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Villos-dukterys.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Anne Jacobs</h2>
-                <h3 class="book-name">Villos dukterys</h3>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/books/Tobula-tyla.webp"
-                  alt="Dantistas book-cover"
-                />
-                <h2 class="writer-name">Helen Fields</h2>
-                <h3 class="book-name">Tobula tyla</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--  navigation buttons -->
-        <div class="savb-swiper-button-prev">
-          <img src="./images/arrow-left.svg" alt=" prev-arrow icon" />
-        </div>
-        <div class="savb-swiper-button-next">
-          <img src="./images/arrow-right.svg" alt="next-arrow icon" />
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="book-link-section"
-      aria-labelledby="book-link-For-children-and-teenagers"
-    >
-      <div class="book-link-section-image"></div>
-      <div class="container">
-        <div class="link-section-title">
-          <h2 class="section-title" id="book-link-For-children-and-teenagers">
-            Vaikams ir <br />
-            paaugliams
-          </h2>
-        </div>
-        <div class="links-wrapper">
-          <div class="single-link">
-            <a
-              href="/#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Renginiai - Event Link"
-            >
-              <div class="link-icon">
-                <img
-                  src="./images/icons/CalendarBlank.svg"
-                  alt="Calendar icon representing events"
-                />
-              </div>
-              <span>Renginiai</span>
-            </a>
-          </div>
-          <div class="single-link">
-            <a
-              href="/#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Edukacijos - Event Link"
-            >
-              <div class="link-icon">
-                <img
-                  src="./images/icons/ChalkboardTeacher.svg"
-                  alt="Chalkboard Teacher icon representing events"
-                />
-              </div>
-              <span>Edukacijos</span>
-            </a>
-          </div>
-          <div class="single-link">
-            <a
-              href="/#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Žaidimai ir kitos veiklos - Event Link"
-            >
-              <div class="link-icon">
-                <img
-                  src="./images/icons/PuzzlePiece.svg"
-                  alt="Puzzle Piece icon representing events"
-                />
-              </div>
-              <span
-                >Žaidimai ir kitos <br />
-                veiklos</span
-              >
-            </a>
-          </div>
-          <div class="single-link">
-            <a
-              href="/#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Naujausios knygos - Event Link"
-            >
-              <div class="link-icon">
-                <img
-                  src="./images/icons/Books.svg"
-                  alt="Puzzle Piece icon representing events"
-                />
-              </div>
-              <span>Naujausios knygos </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="partners-section" aria-labelledby="partners logos">
-      <!-- Slider main container -->
-      <div class="container">
-        <div class="swiper partners-carousel">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/vaga.svg"
-                  alt="vaga partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/historypin.svg"
-                  alt="historypin partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/we--lithaanis.svg"
-                  alt="we--lithaanis partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/Valdzios-vartai.svg"
-                  alt="Valdzios-vartai partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/ibiblioteka.svg"
-                  alt="ibiblioteka partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/vaga.svg"
-                  alt="vaga partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/historypin.svg"
-                  alt="historypin partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/we--lithaanis.svg"
-                  alt="we--lithaanis partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/Valdzios-vartai.svg"
-                  alt="Valdzios-vartai partners-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./images/partners-logo/ibiblioteka.svg"
-                  alt="ibiblioteka partners-logo"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--  navigation buttons -->
-        <div class="savb-swiper-button-prev">
-          <img src="./images/arrow-left.svg" alt=" prev-arrow icon" />
-        </div>
-        <div class="savb-swiper-button-next">
-          <img src="./images/arrow-right.svg" alt="next-arrow icon" />
-        </div>
-      </div>
-    </section>
-
-    <section class="book-review-section-wrapper" aria-labelledby="book-review">
-      <div class="container">
-        <div class="book-cover">
-          <img src="./images/book-cover-image.webp" alt="" />
-        </div>
-      </div>
-      <div class="book-review-section">
-        <div class="container">
-          <div class="book-review">
-            <span class="quote-icon"
-              ><img src="./images/icons/quote-icon.svg" alt="review icon"
-            /></span>
-            <h2>„Aušros alėja“</h2>
-            <p>
-              The most advanced revenue than this. I like Level more and more
-              each da easier. It really saves me time and ef business has been
-              lacking lorem ipsum.
-            </p>
-            <div class="">
-              <a href="/#" class="btn-primary white-bg">Skaityti</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer-coll-section" aria-labelledby="footer-column">
-      <div class="container">
-        <div class="footer-coll">
-          <div class="footer-coll-logo">
-            <div class="footer-logo">
-              <a href="" aria-label="Homepage" title="logo">
-                <img src="./images/logo/logo.svg" alt="texus it Logo" />
-              </a>
-            </div>
-
-            <div class="footer-text">
-              <p>
-                Biudžetinė įstaiga, kodas 190757940 <br />
-                Duomenys kaupiami ir saugomi <br />
-                Juridinių asmenų registre
-              </p>
-            </div>
-
-            <div class="footer-social-links">
-              <a
-                href="/#"
-                aria-label="Visit our Facebook page"
-                title="Follow us on Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./images/icons/facebook.svg" alt="facebook logo" />
-                <span class="sr-only">facebook</span>
-              </a>
-              <a
-                href="/#"
-                aria-label="Visit our Instagram profile"
-                title="Follow us on Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="./images/icons/instagram.svg"
-                  alt="instagram logo"
-                /><span class="sr-only">instagram</span></a
-              >
-              <a
-                href="/#"
-                aria-label="Visit our Youtube channel"
-                title="Subscribe to our Youtube Channel"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./images/icons/youtube.svg" alt="youtube logo" />
-                <span class="sr-only">Youtube</span></a
-              >
-            </div>
-          </div>
-          <div class="footer-coll-item">
-            <h2>Kontaktai</h2>
-            <address>
-              <div aria-label="address">
-                <span
-                  ><img
-                    src="./images/icons/locations.svg"
-                    alt=" address location icons"
-                /></span>
-                Aušros alėja 62, LT-76235,  Šiauliai
-              </div>
-              <div aria-label="email">
-                <span
-                  ><img src="./images/icons/envelope.svg" alt="mail icon"
-                /></span>
-                bibl@savb.lt
-              </div>
-              <div aria-label="phone">
-                <span
-                  ><img src="./images/icons/phone.svg" alt="phone icons"
-                /></span>
-                (8 41) 52 37 5057840
-              </div>
-              <div aria-label="address number">Įm. kodas: 190757840</div>
-            </address>
-          </div>
-          <div class="footer-coll-item">
-            <h2>Kontaktai</h2>
-            <ul aria-label="footer links">
-              <li><a href="/#">Struktūra ir kontaktinė informacija</a></li>
-              <li><a href="/#">Administracinė informacija</a></li>
-              <li><a href="/#">Logotipas</a></li>
-              <li><a href="/#">Teisės aktai</a></li>
-              <li><a href="/#">Asmens duomenų apsauga</a></li>
-              <li><a href="/#">Korupcijos prevencija</a></li>
-              <li><a href="/#">Pranešėjų apsauga</a></li>
-              <li><a href="/#">Nuorodos</a></li>
-            </ul>
-          </div>
-          <div class="footer-coll-item">
-            <h2>
-              Prenumeruokite naujienlaiškį
-              <br />
-              ir sužinokite naujienas pirmieji!
-            </h2>
-
-            <form action="#" method="POST" aria-label="Newsletter Subscription">
-              <div class="footer-input">
-                <label for="email" class="sr-only">Jūsų el. paštas</label>
-
-                <div class="footer-input-icon">
-                  <img src="./images/icons/email.svg" alt="email icon" />
-                </div>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Jūsų el. paštas"
-                  required
-                  aria-required="true"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <button
-                class="btn-primary"
-                type="submit"
-                aria-label="Submit Newsletter Subscription"
-              >
-                Prenumeruoti
-              </button>
-
-              <p id="emailHelp">
-                *Prenumeruodami naujienlaiškį sutinkate su <br />
-                <a href="/privatumo-politika" aria-label="Read Privacy Policy">
-                  privatumo politika
-                </a>
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer" role="contentinfo"  aria-labelledby="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>
-            &copy; 2023 Šiaulių apskrities Povilo Višinskio viešoji biblioteka
-          </p>
-          <p>
-            Sukurta :
-            <a
-              href="https://texus.lt"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Texus"
-              >Texus</a
-            >
-          </p>
-        </div>
-      </div>
-    </footer>
-  </section>
-
-    <!-- swiper js  -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/calender.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper1 = new Swiper(".partners-carousel", {
-
-        spaceBetween: 0,
-        loop: false,
-        freeMode: false,
-        navigation: {
-          nextEl: ".savb-swiper-button-next",
-          prevEl: ".savb-swiper-button-prev",
-        },
-         breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-           1080: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1440: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
-        },
-      });
-      var swiper2 = new Swiper(".latest-books-carousel", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: false,
-        freeMode: false,
-        navigation: {
-          nextEl: ".savb-swiper-button-next",
-          prevEl: ".savb-swiper-button-prev",
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          1080: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-           1440: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        },
-      });
-      var swiper3 = new Swiper(".home-carousel", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        freeMode: true,
-        // autoplay: {
-        //         delay: 2500,
-        //         disableOnInteraction: false,
-        //       },
-        navigation: {
-          nextEl: ".savb-swiper-button-next",
-          prevEl: ".savb-swiper-button-prev",
-        },
-      });
-    </script>
-
-    <script>
-    window.onscroll = function() {myFunction()};
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
 
 
-    // for mobile menu
-      const burgerIcon = document.getElementById('mobile-menu-btn');
-      // const mobileMenu = document.getElementById('mobile-menu');
-      const body = document.body;
-      console.log(body);
+            // for mobile menu
+              const burgerIcon = document.getElementById('mobile-menu-btn');
+              const body = document.body;
 
-      burgerIcon.addEventListener('click', () => {
-        burgerIcon.classList.toggle('active');
-        // mobileMenu.classList.toggle('active');
-        body.classList.toggle('mobile-menu-open');
-      });
-    </script>
+              burgerIcon.addEventListener('click', () => {
+                burgerIcon.classList.toggle('active');
 
-  </body>
+                body.classList.toggle('mobile-menu-open');
+              });
+        </script>
+    </body>
 </html>
