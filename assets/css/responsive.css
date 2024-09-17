@@ -388,10 +388,10 @@
 .header-menu-links{
     padding-left:1rem;
 }
-.menu-items-section ul li a{
+.menu-items-section nav a{
     font-size:var(--fs-14);
 }
-.menu-items-section ul{
+.menu-items-section nav{
     gap:1rem;
 }
 .menu-link-section ul li{
